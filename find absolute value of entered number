@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+// Function to find the absolute value of a number
+float absoluteValue(float number) {
+    return (number < 0) ? -number : number;
+}
+
+int main() {
+    float number;
+
+    // Read input from the user
+    printf("Enter a number: ");
+    scanf("%f", &number);
+
+    // Find and display the absolute value
+    printf("The absolute value of %.2f is %.2f\n", number, absoluteValue(number));
+
+    return 0;
+}
