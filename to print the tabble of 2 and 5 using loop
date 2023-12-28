@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    // Print the multiplication table for 2
+    printf("Multiplication table for 2:\n");
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", 2, i, 2 * i);
+    }
+
+    // Print a separator line
+    printf("\n------------------------\n\n");
+
+    // Print the multiplication table for 5
+    printf("Multiplication table for 5:\n");
+    for (j = 1; j <= 10; j++) {
+        printf("%d x %d = %d\n", 5, j, 5 * j);
+    }
+
+    return 0;
+}
