@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+
+    // Read input from the user
+    printf("Enter the first three-digit number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second three-digit number: ");
+    scanf("%d", &num2);
+
+    printf("Enter the third three-digit number: ");
+    scanf("%d", &num3);
+
+    // Check and display the greatest number
+    if (num1 >= 100 && num1 <= 999 && num2 >= 100 && num2 <= 999 && num3 >= 100 && num3 <= 999) {
+        int greatest = (num1 > num2) ? ((num1 > num3) ? num1 : num3) : ((num2 > num3) ? num2 : num3);
+        printf("The greatest number is: %d\n", greatest);
+    } else {
+        printf("Invalid input. Please enter three-digit numbers.\n");
+    }
+
+    return 0;
+}
